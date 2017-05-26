@@ -17,9 +17,4 @@ public class Main2Activity extends AppCompatActivity {
         stringDigit2 = getIntent().getExtras().getString("Value");
         texto2.setText(stringDigit2);
     }
-    public void btnClickAct2(View v){
-        Intent i = new Intent(Main2Activity.this, MainActivity.class);
-        startActivity(i);
-        finish();
-    }
 }
