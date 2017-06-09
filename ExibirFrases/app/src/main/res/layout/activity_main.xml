@@ -37,10 +37,9 @@
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView3"
-        android:layout_alignParentBottom="true"
-        android:layout_alignStart="@+id/textView3"
-        android:layout_marginBottom="69dp" />
+        android:layout_below="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="65dp" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -79,7 +78,7 @@
         app:srcCompat="@drawable/esp"
         android:visibility="invisible"
         android:layout_alignBottom="@+id/textView3"
-        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignLeft="@+id/usaFlag2"
         android:layout_alignStart="@+id/usaFlag2" />
 
     <ImageView
@@ -89,7 +88,7 @@
         app:srcCompat="@drawable/esp"
         android:visibility="invisible"
         android:layout_alignBottom="@+id/textView3"
-        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignLeft="@+id/usaFlag1"
         android:layout_alignStart="@+id/usaFlag1" />
 
     <ImageView
@@ -98,9 +97,10 @@
         android:layout_height="40dp"
         app:srcCompat="@drawable/br"
         android:visibility="invisible"
-        android:layout_alignTop="@+id/textView4"
-        android:layout_alignLeft="@+id/textView4"
-        android:layout_alignStart="@+id/espFlag1" />
+        android:layout_below="@+id/espFlag1"
+        android:layout_alignLeft="@+id/espFlag1"
+        android:layout_alignStart="@+id/espFlag1"
+        android:layout_marginTop="53dp" />
 
     <ImageView
         android:id="@+id/brFlag2"
