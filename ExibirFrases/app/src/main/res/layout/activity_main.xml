@@ -10,11 +10,11 @@
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
         android:onClick="btnClicked"
-        android:text="Aperte" />
+        android:text="Aperte"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp" />
 
     <TextView
         android:id="@+id/textView2"
@@ -22,8 +22,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/button2"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="90dp"
-        android:text="FRASE 1" />
+        android:layout_marginTop="36dp" />
 
     <TextView
         android:id="@+id/textView3"
@@ -31,18 +30,87 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/textView2"
         android:layout_alignStart="@+id/textView2"
-        android:layout_centerVertical="true"
-        android:text="FRASE 2" />
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="90dp" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/textView3"
+        android:layout_alignParentBottom="true"
         android:layout_alignStart="@+id/textView3"
-        android:layout_below="@+id/textView3"
-        android:layout_marginTop="82dp"
-        android:text="FRASE 3" />
+        android:layout_marginBottom="69dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/helloworld"
+        android:layout_marginTop="16dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/usaFlag1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:srcCompat="@drawable/usa"
+        android:visibility="invisible"
+        android:layout_below="@+id/button2"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/imageView"
+        android:layout_marginTop="24dp" />
+
+    <ImageView
+        android:id="@+id/usaFlag2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:visibility="invisible"
+        android:layout_alignEnd="@+id/imageView"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_alignTop="@+id/usaFlag1"
+        app:srcCompat="@drawable/usa" />
+
+    <ImageView
+        android:id="@+id/espFlag2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:srcCompat="@drawable/esp"
+        android:visibility="invisible"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignStart="@+id/usaFlag2" />
+
+    <ImageView
+        android:id="@+id/espFlag1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:srcCompat="@drawable/esp"
+        android:visibility="invisible"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignStart="@+id/usaFlag1" />
+
+    <ImageView
+        android:id="@+id/brFlag1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:srcCompat="@drawable/br"
+        android:visibility="invisible"
+        android:layout_alignTop="@+id/textView4"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_alignStart="@+id/espFlag1" />
+
+    <ImageView
+        android:id="@+id/brFlag2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:visibility="invisible"
+        android:layout_alignBottom="@+id/brFlag1"
+        android:layout_alignEnd="@+id/espFlag2"
+        android:layout_alignRight="@+id/textView4"
+        app:srcCompat="@drawable/br" />
 
 
 </RelativeLayout>
